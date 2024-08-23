@@ -32,7 +32,7 @@ export default function AudioTest() {
             </button>
             <audio
                 ref={audioRef}
-                src="/flow.mp3"
+                src={`${process.env.NEXT_PUBLIC_BASE_URL || ''}/flow.mp3`}
                 onEnded={handleAudioEnded}
             />
             <p className="mt-4 text-gray-600">
