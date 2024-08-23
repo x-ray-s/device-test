@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 
+
 const CameraTest = () => {
   const [stream, setStream] = useState(null);
   const videoRef = useRef(null);
@@ -39,7 +40,7 @@ const CameraTest = () => {
           className="w-full h-auto mb-4 rounded"
         />
         <p className="text-gray-700 mb-4">
-          This is a live camera feed using your device's camera.
+          This is a live camera feed using your device&apos;s camera.
         </p>
 
       </div>

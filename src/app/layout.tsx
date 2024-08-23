@@ -5,40 +5,10 @@ import { Navigation } from "./ui/nav-links";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// 为每个页面定义特定的元数据
-const pageMetadata: { [key: string]: Metadata } = {
-  '/': {
-    title: "Home - Input Device Testing",
-    description: "Test various input devices on your browser",
-  },
-  '/keyboard': {
-    title: "Keyboard Test - Input Device Testing",
-    description: "Test your keyboard input and functionality",
-  },
-  '/camera': {
-    title: "Camera Test - Input Device Testing",
-    description: "Test your camera and video input capabilities",
-  },
-  '/microphone': {
-    title: "Microphone Test - Input Device Testing",
-    description: "Test your microphone and audio input functionality",
-  },
-  '/audio': {
-    title: "Audio Test - Input Device Testing",
-    description: "Test your audio output and playback capabilities",
-  },
-};
-
-
-// 动态生成metadata
-export const generateMetadata = ({ pathname }: { pathname: string }): Metadata => {
-  return pageMetadata[pathname] || {
-    title: "Input Device Testing",
-    description: "Test various input and output devices on your browser",
-  };
-};
-
-
+export const metadata: Metadata = {
+  title: "Input Device Testing",
+  description: "Test various input and output devices on your browser",
+}
 
 export default function RootLayout({
   children,

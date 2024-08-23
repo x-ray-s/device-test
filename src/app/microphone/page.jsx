@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react';
 
+
 export default function MicTest() {
   const [isRecording, setIsRecording] = useState(false);
   const [audioURL, setAudioURL] = useState('');
@@ -12,7 +13,7 @@ export default function MicTest() {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
       mediaRecorderRef.current = new MediaRecorder(stream);
-      
+
       mediaRecorderRef.current.ondataavailable = (event) => {
         if (event.data.size > 0) {
           audioChunksRef.current.push(event.data);
@@ -46,11 +47,10 @@ export default function MicTest() {
       <div className="space-y-4">
         <button
           onClick={isRecording ? stopRecording : startRecording}
-          className={`px-4 py-2 rounded ${
-            isRecording
-              ? 'bg-red-500 hover:bg-red-600'
-              : 'bg-blue-500 hover:bg-blue-600'
-          } text-white`}
+          className={`px-4 py-2 rounded ${isRecording
+            ? 'bg-red-500 hover:bg-red-600'
+            : 'bg-blue-500 hover:bg-blue-600'
+            } text-white`}
         >
           {isRecording ? 'Stop Recording' : 'Start Recording'}
         </button>

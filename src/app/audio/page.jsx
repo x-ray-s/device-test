@@ -24,8 +24,8 @@ export default function AudioTest() {
                 onClick={playTestSound}
                 disabled={isPlaying}
                 className={`px-6 py-3 rounded-lg text-white font-semibold ${isPlaying
-                        ? 'bg-gray-400 cursor-not-allowed'
-                        : 'bg-blue-500 hover:bg-blue-600'
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : 'bg-blue-500 hover:bg-blue-600'
                     }`}
             >
                 {isPlaying ? 'Playing...' : 'Play Test Sound'}
