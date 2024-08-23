@@ -12,6 +12,7 @@ export default function AudioTest() {
             setIsPlaying(true);
         }
     };
+    console.log(process.env)
 
     const handleAudioEnded = () => {
         setIsPlaying(false);

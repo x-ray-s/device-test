@@ -4,7 +4,7 @@
 
 
 
-const nextConfig = process.env.NODE_ENV === "development" ? {} : {
+const nextConfig = {
     output: "export",
     basePath: "/device-test",
 };
