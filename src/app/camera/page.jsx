@@ -32,14 +32,14 @@ const CameraTest = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Camera Test</h1>
-      <div className="bg-gray-100 p-6 rounded-lg shadow-md">
+      <div className="bg-white  dark:bg-gray-800 p-6 rounded-lg shadow-md">
         <video
           ref={videoRef}
           autoPlay
           playsInline
           className="w-full h-auto mb-4 rounded"
         />
-        <p className="text-gray-700 mb-4">
+        <p className="text-gray-700 dark:text-gray-300 mb-4">
           This is a live camera feed using your device&apos;s camera.
         </p>
 

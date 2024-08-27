@@ -19,7 +19,7 @@ export default function AudioTest() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <div >
             <h1 className="text-3xl font-bold mb-8">Audio Device Test</h1>
             <button
                 onClick={playTestSound}
@@ -36,7 +36,7 @@ export default function AudioTest() {
                 src={`${process.env.NEXT_PUBLIC_BASE_URL || ''}/flow.mp3`}
                 onEnded={handleAudioEnded}
             />
-            <p className="mt-4 text-gray-600">
+            <p className="mt-4 text-gray-600 dark:text-gray-300">
                 Click the button above to play a test sound and check your audio device.
             </p>
         </div>

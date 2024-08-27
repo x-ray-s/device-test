@@ -8,7 +8,7 @@ export function Navigation() {
     const showNavigation = pathname !== '/';
 
     return showNavigation && (
-        <nav className="w-full bg-gray-100 text-gray-800 p-4 shadow-md">
+        <nav className="w-full bg-gray-100 text-gray-800 p-4 shadow-md dark:bg-gray-800 dark:text-gray-100">
             <ul className="flex justify-center space-x-4">
                 {[
                     { href: '/', label: 'Home' },

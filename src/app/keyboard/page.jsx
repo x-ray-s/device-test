@@ -31,9 +31,9 @@ const Keyboard = () => {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+        <div >
             <h1 className="text-3xl font-bold mb-8">Keyboard Test</h1>
-            <div className="bg-white p-8 rounded-lg shadow-md w-96">
+            <div className="bg-white  dark:bg-gray-800 p-8 rounded-lg shadow-md w-96">
                 <p className="text-xl mb-4">
                     Press any key to see its information:
                 </p>
@@ -54,7 +54,7 @@ const Keyboard = () => {
 };
 
 const ModifierKey = ({ active, children }) => (
-    <span className={`px-3 py-1 rounded ${active ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}>
+    <span className={`px-3 py-1 rounded ${active ? 'bg-blue-500 text-white' : 'bg-gray-200 dark:bg-gray-700'}`}>
         {children}
     </span>
 );
